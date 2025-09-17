@@ -3,7 +3,7 @@
 A **GearSwap export helper** that writes a prioritized gear set based on **HP contributions**.  
 This script can **export your currently equipped gear** as a GearSwap‐ready Lua file with `priority=` tags, or **clone your entire job file** and inject priorities into every set.
 
-<img width="1171" height="765" alt="Prioritize" src="https://github.com/user-attachments/assets/05d2a693-ce48-4e5d-a1c4-e2bc5b0f240f" />
+<img width="1149" height="699" alt="Prioritize" src="https://github.com/user-attachments/assets/610f25c8-b8ff-4e3a-af13-0078bc5d9aac" />
 
 ---
 
