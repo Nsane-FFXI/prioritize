@@ -367,11 +367,11 @@ local function read_lua_value(src, idx)
 end
 
 local function extract_name_and_aug(rhs)
-  local name = rhs:match('^%s*[\'"](.-)[\'"]%s*$')
+  local q, name = rhs:match('^%s*([\'"])(.-)%1%s*$')
   if name then return name, nil end
-  name = rhs:match('[,{}%s]name%s*=%s*[\'"](.-)[\'"]')
+  local q2, name2 = rhs:match('[,{}%s]name%s*=%s*([\'"])(.-)%1')
   local aug = rhs:match('augments%s*=%s*%b{}')
-  return name, aug
+  return name2, aug
 end
 
 -- Remove any existing priority field from a table RHS while preserving other keys.
@@ -591,4 +591,5 @@ windower.register_event('addon command', function(cmd, a1, a2)
       return
     end
   end
+
 end)
