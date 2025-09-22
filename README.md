@@ -1,4 +1,5 @@
 # prioritize.lua
+# DO NOT USE FOR JOB ABILITIES OR WEAPON SKILLS.
 
 A **GearSwap export helper** that writes a prioritized gear set based on **HP contributions**.  
 This script can **export your currently equipped gear** as a GearSwap‐ready Lua file with `priority=` tags, or **clone your entire job file** and inject priorities into every set.
